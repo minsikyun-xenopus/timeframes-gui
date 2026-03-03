@@ -1,10 +1,10 @@
-TIME ↔ FRAMES GUI
+# **TIME ↔ FRAMES GUI**
 
 A simple Python GUI tool for converting time (hh:mm:ss) to video frame numbers and vice versa.
 
 ---
 
-DESCRIPTION
+**DESCRIPTION**
 
 This tool provides a graphical interface for converting between:
 
@@ -24,7 +24,7 @@ a web browser or external dependencies.
 
 ---
 
-FEATURES
+**FEATURES**
 
 * Convert time to frame number
 * Convert frame number to time
@@ -34,33 +34,33 @@ FEATURES
 
 ---
 
-INSTALLATION
+**INSTALLATION**
 
 1. Clone the repository
-
+```
 git clone https://github.com/minsikyun-xenopus/timeframes-gui.git
 cd timeframes-gui
-
+```
 2. Create a conda environment
-
+```
 conda create -n timeframes python=3.10
 conda activate timeframes
-
+```
 3. Install the package
-
+```
 pip install -e .
-
+```
 ---
 
-RUNNING THE PROGRAM
+**RUNNING THE PROGRAM**
 
 After installation, run:
-
+```
 timeframes-gui
-
+```
 ---
 
-REQUIREMENTS
+**REQUIREMENTS**
 
 Python 3.9 or newer
 
@@ -68,28 +68,33 @@ Tkinter (usually included with Python)
 
 Linux users may need to install Tkinter manually:
 
+```
 sudo apt install python3-tk
+```
 
 ---
 
-EXAMPLE
+**EXAMPLE**
 
 Example conversion:
 
+```
 FPS = 30
 Time = 01:00:00
 
 Result:
 
 Frames = 108000
+```
 
 Reverse conversion:
 
+```
 Frames = 108000
 FPS = 30
 
 Result:
 
 Time = 01:00:00
-
+```
 
