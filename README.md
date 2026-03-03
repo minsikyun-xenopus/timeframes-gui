@@ -92,38 +92,4 @@ Result:
 
 Time = 01:00:00
 
----
-
-PROJECT STRUCTURE
-
-timeframes-gui
-
-pyproject.toml
-README.md
-
-src/
-timeframes_gui/
-**init**.py
-app.py
-
----
-
-AUTHOR
-
-Minsik Yun
-Postdoctoral Researcher
-Johns Hopkins University
-
-Research interests:
-
-* Insect neuroethology
-* Behavioral analysis
-* Neural circuit mechanisms
-
----
-
-LICENSE
-
-MIT License
-
 
