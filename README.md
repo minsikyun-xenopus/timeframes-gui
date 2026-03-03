@@ -1,38 +1,104 @@
-# Time ↔ Frames GUI
+Time ↔ Frames GUI
 
-A simple Python GUI tool to convert **time (hours, minutes, seconds)** to **video frame numbers**, and vice versa.
+A lightweight Python GUI tool for converting time (hh:mm:ss) to video frame numbers, and vice versa.
 
-This tool is useful for video analysis workflows in neuroscience and behavioral experiments where frame indices must be converted to timestamps.
+This tool is useful in behavioral neuroscience and video analysis workflows where frame indices must be converted to timestamps.
 
 The application provides two functions:
 
-- **Time → Frames**
-- **Frames → Time**
+- Time → Frames
+- Frames → Time
 
-The GUI is built with **Tkinter**, so it runs locally without requiring a web browser.
+The GUI is built with Tkinter, so it runs locally without requiring a web browser.
 
----
 
-# Features
+Features
 
-- Convert **h:m:s → frames**
-- Convert **frames → h:m:s**
-- Decimal seconds supported
-- Enter key shortcut for quick calculation
-- Error messages shown in English
+- Convert time → frames
+- Convert frames → time
+- Supports decimal seconds
+- Simple GUI interface
 - Lightweight (no external dependencies)
 
----
-# After installation, run:
+
+Installation
+
+Clone the repository:
+
+git clone https://github.com/minsikyun-xenopus/timeframes-gui.git
+cd timeframes-gui
+
+
+Create a conda environment:
+
+conda create -n timeframes python=3.10
+conda activate timeframes
+
+
+Install the package:
+
+pip install -e .
+
+
+Run
+
+After installation:
 
 timeframes-gui
 
----
-# Installation
 
-You can install directly from GitHub using pip.
+Requirements
 
-```bash
-pip install git+https://github.com/minsikyun-xenopus/timeframes-gui.git
+Python 3.9+
 
+Tkinter (usually included with Python)
+
+Linux users may need to install Tkinter:
+
+sudo apt install python3-tk
+
+
+Example
+
+Example conversion:
+
+FPS = 30
+Time = 01:00:00
+
+Result:
+
+Frames = 108000
+
+
+Reverse conversion:
+
+Frames = 108000
+FPS = 30
+
+Result:
+
+Time = 01:00:00
+
+
+Project Structure
+
+timeframes-gui
+│
+├── pyproject.toml
+├── README.md
+│
+└── src
+    └── timeframes_gui
+        ├── __init__.py
+        └── app.py
+
+
+Author
+
+Minsik Yun
+
+
+License
+
+MIT License
 
