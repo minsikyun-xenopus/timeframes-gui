@@ -1,64 +1,78 @@
-Time ↔ Frames GUI
+TIME ↔ FRAMES GUI
 
-A lightweight Python GUI tool for converting time (hh:mm:ss) to video frame numbers, and vice versa.
+A simple Python GUI tool for converting time (hh:mm:ss) to video frame numbers and vice versa.
 
-This tool is useful in behavioral neuroscience and video analysis workflows where frame indices must be converted to timestamps.
+---
 
-The application provides two functions:
+DESCRIPTION
 
-- Time → Frames
-- Frames → Time
+This tool provides a graphical interface for converting between:
 
-The GUI is built with Tkinter, so it runs locally without requiring a web browser.
+* Time (hours, minutes, seconds)
+* Video frame numbers
 
+It is useful for video analysis workflows in behavioral neuroscience
+and other experiments where frame indices must be converted to timestamps.
 
-Features
+The application includes two main functions:
 
-- Convert time → frames
-- Convert frames → time
-- Supports decimal seconds
-- Simple GUI interface
-- Lightweight (no external dependencies)
+• Time → Frames
+• Frames → Time
 
+The GUI is built with Tkinter and runs locally without requiring
+a web browser or external dependencies.
 
-Installation
+---
 
-Clone the repository:
+FEATURES
+
+* Convert time to frame number
+* Convert frame number to time
+* Supports decimal seconds
+* Simple graphical user interface
+* Lightweight (no external dependencies)
+
+---
+
+INSTALLATION
+
+1. Clone the repository
 
 git clone https://github.com/minsikyun-xenopus/timeframes-gui.git
 cd timeframes-gui
 
-
-Create a conda environment:
+2. Create a conda environment
 
 conda create -n timeframes python=3.10
 conda activate timeframes
 
-
-Install the package:
+3. Install the package
 
 pip install -e .
 
+---
 
-Run
+RUNNING THE PROGRAM
 
-After installation:
+After installation, run:
 
 timeframes-gui
 
+---
 
-Requirements
+REQUIREMENTS
 
-Python 3.9+
+Python 3.9 or newer
 
 Tkinter (usually included with Python)
 
-Linux users may need to install Tkinter:
+Linux users may need to install Tkinter manually:
 
 sudo apt install python3-tk
 
+---
 
-Example
+EXAMPLE
 
 Example conversion:
 
@@ -69,7 +83,6 @@ Result:
 
 Frames = 108000
 
-
 Reverse conversion:
 
 Frames = 108000
@@ -79,26 +92,38 @@ Result:
 
 Time = 01:00:00
 
+---
 
-Project Structure
+PROJECT STRUCTURE
 
 timeframes-gui
-│
-├── pyproject.toml
-├── README.md
-│
-└── src
-    └── timeframes_gui
-        ├── __init__.py
-        └── app.py
 
+pyproject.toml
+README.md
 
-Author
+src/
+timeframes_gui/
+**init**.py
+app.py
+
+---
+
+AUTHOR
 
 Minsik Yun
+Postdoctoral Researcher
+Johns Hopkins University
 
+Research interests:
 
-License
+* Insect neuroethology
+* Behavioral analysis
+* Neural circuit mechanisms
+
+---
+
+LICENSE
 
 MIT License
+
 
